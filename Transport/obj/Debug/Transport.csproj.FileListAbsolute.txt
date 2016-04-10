@@ -1,0 +1,7 @@
+C:\Users\usert\Desktop\учёба\СПО\Лабы\lab.1\Model\Transport\bin\Debug\Transport.exe
+C:\Users\usert\Desktop\учёба\СПО\Лабы\lab.1\Model\Transport\bin\Debug\Transport.pdb
+C:\Users\usert\Desktop\учёба\СПО\Лабы\lab.1\Model\Transport\bin\Debug\Model.dll
+C:\Users\usert\Desktop\учёба\СПО\Лабы\lab.1\Model\Transport\bin\Debug\Model.pdb
+C:\Users\usert\Desktop\учёба\СПО\Лабы\lab.1\Model\Transport\obj\Debug\Transport.csprojResolveAssemblyReference.cache
+C:\Users\usert\Desktop\учёба\СПО\Лабы\lab.1\Model\Transport\obj\Debug\Transport.exe
+C:\Users\usert\Desktop\учёба\СПО\Лабы\lab.1\Model\Transport\obj\Debug\Transport.pdb

@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vehicle", "Model\Vehicle.csproj", "{CCBD4AE8-F096-4873-B6B6-4B83C86A77FD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TransportForm", "TransportForm\TransportForm.csproj", "{DCEC2701-CD0F-42FF-96D6-DAC94493EDDA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CCBD4AE8-F096-4873-B6B6-4B83C86A77FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCBD4AE8-F096-4873-B6B6-4B83C86A77FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCBD4AE8-F096-4873-B6B6-4B83C86A77FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCBD4AE8-F096-4873-B6B6-4B83C86A77FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DCEC2701-CD0F-42FF-96D6-DAC94493EDDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCEC2701-CD0F-42FF-96D6-DAC94493EDDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DCEC2701-CD0F-42FF-96D6-DAC94493EDDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DCEC2701-CD0F-42FF-96D6-DAC94493EDDA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

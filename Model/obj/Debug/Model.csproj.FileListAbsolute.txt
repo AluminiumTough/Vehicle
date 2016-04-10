@@ -1,0 +1,16 @@
+C:\Users\usert\Desktop\учёба\СПО\Лабы\lab.1\Model\Model\bin\Debug\Model.dll
+C:\Users\usert\Desktop\учёба\СПО\Лабы\lab.1\Model\Model\bin\Debug\Model.pdb
+C:\Users\usert\Desktop\учёба\СПО\Лабы\lab.1\Model\Model\obj\Debug\Model.dll
+C:\Users\usert\Desktop\учёба\СПО\Лабы\lab.1\Model\Model\obj\Debug\Model.pdb
+G:\lab.1\Model\Model\bin\Debug\Model.dll
+G:\lab.1\Model\Model\bin\Debug\Model.pdb
+G:\lab.1\Model\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+G:\lab.1\Model\Model\obj\Debug\Model.dll
+G:\lab.1\Model\Model\obj\Debug\Model.pdb
+C:\Users\Nurman\Desktop\СПО\lab.2\Model\Model\bin\Debug\Model.dll
+C:\Users\Nurman\Desktop\СПО\lab.2\Model\Model\bin\Debug\Model.pdb
+C:\Users\Nurman\Desktop\СПО\lab.2\Model\Model\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Nurman\Desktop\СПО\lab.2\Model\Model\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Nurman\Desktop\СПО\lab.2\Model\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+C:\Users\Nurman\Desktop\СПО\lab.2\Model\Model\obj\Debug\Model.dll
+C:\Users\Nurman\Desktop\СПО\lab.2\Model\Model\obj\Debug\Model.pdb
