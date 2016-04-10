@@ -106,7 +106,10 @@ namespace TransportForm
         private void Car_CheckedChanged(object sender, EventArgs e)
         {
 
-            TypeCar.Location = new Point(0, 130);
+            //TypeCar.Location = new Point(0, 130);
+            TypeHybrid.Visible = false;
+            TypeCar.Visible = true;
+            TypeHelicopter.Visible = false;
             if (Car.Checked)
             {
                 Transport.Controls.Add(TypeCar);
@@ -115,15 +118,16 @@ namespace TransportForm
             {
                 Transport.Controls.Remove(TypeCar);
             }
-            //Car.Checked = true;
-            //TypeCar.Visible = Car.Checked;
-            //TypeHybrid.Visible = !Car.Checked;
-            //TypeHelicopter.Visible = !Car.Checked;
+
         }
 
         private void Hybrid_CheckedChanged(object sender, EventArgs e)
         {
-            TypeHybrid.Location = new Point(0, 130);
+            TypeHybrid.Visible = true;
+            TypeCar.Visible = false;
+            TypeHelicopter.Visible = false;
+            // TypeHybrid.Location = new Point(0, 130);
+
             if (Hybrid.Checked)
             {
                 Transport.Controls.Add(TypeHybrid);
@@ -132,15 +136,15 @@ namespace TransportForm
             {
                 Transport.Controls.Remove(TypeHybrid);
             }
-            //Hybrid.Checked = true;
-//            TypeHybrid.Visible = Hybrid.Checked;
-            //TypeCar.Visible = !Hybrid.Checked;
-            //TypeHelicopter.Visible = !Hybrid.Checked;
+
         }
 
         private void Helicopter_CheckedChanged(object sender, EventArgs e)
         {
-            TypeHelicopter.Location = new Point(0, 130);
+            TypeHybrid.Visible = false;
+            TypeCar.Visible = false;
+            TypeHelicopter.Visible = true;
+           // TypeHelicopter.Location = new Point(0, 130);
             if (Helicopter.Checked)
             {
                 Transport.Controls.Add(TypeHelicopter);
@@ -149,10 +153,7 @@ namespace TransportForm
             {
                 Transport.Controls.Remove(TypeHelicopter);
             }
-            //Helicopter.Checked = true;
-//            TypeHelicopter.Visible = Helicopter.Checked;
-            //TypeHybrid.Visible = false;
-            //TypeCar.Visible = false;
+
         }
     }
 }
