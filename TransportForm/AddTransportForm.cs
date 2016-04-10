@@ -106,7 +106,7 @@ namespace TransportForm
         private void Car_CheckedChanged(object sender, EventArgs e)
         {
 
-            //TypeCar.Location = new Point(0, 130);
+            
             TypeHybrid.Visible = false;
             TypeCar.Visible = true;
             TypeHelicopter.Visible = false;
@@ -126,7 +126,7 @@ namespace TransportForm
             TypeHybrid.Visible = true;
             TypeCar.Visible = false;
             TypeHelicopter.Visible = false;
-            // TypeHybrid.Location = new Point(0, 130);
+           
 
             if (Hybrid.Checked)
             {
@@ -144,7 +144,7 @@ namespace TransportForm
             TypeHybrid.Visible = false;
             TypeCar.Visible = false;
             TypeHelicopter.Visible = true;
-           // TypeHelicopter.Location = new Point(0, 130);
+          
             if (Helicopter.Checked)
             {
                 Transport.Controls.Add(TypeHelicopter);
