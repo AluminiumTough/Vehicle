@@ -41,7 +41,7 @@ namespace Model
 
             set
             {
-                if (value < 0 || value > 80)
+                if (value < 0 || value > 85)
                     throw new InvalidOperationException("!");
                 _volumeOfTheTank = value;
             }
