@@ -45,7 +45,7 @@ namespace Model
         {
             set
             {
-                if (value < 50 || value > 80)
+                if (value < 50 || value > 85)
                     throw new InvalidOperationException("!");
                 _powerOfBattery = value;
             }
@@ -60,7 +60,7 @@ namespace Model
         {
             set
             {
-                if (value < 0 || value > 40)
+                if (value < 0 || value > 45)
                     throw new InvalidOperationException("!");
                 _volumeOfTheTank = value;
             }
@@ -77,7 +77,7 @@ namespace Model
         {
             set
             {
-                if (value < 0 || value > 40)
+                if (value < 0 || value > 45)
                     throw new InvalidOperationException("!");
                 _theCurrentAmountOfFuel = value;
             }
