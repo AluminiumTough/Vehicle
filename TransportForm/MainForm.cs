@@ -60,10 +60,7 @@ namespace TransportForm
         {
             if (TransportGrid.SelectedRows.Count == 1)
             {
-                //DataGridViewRow row = TransportGrid.SelectedRows[0];
-
-                //TransportGrid.Rows.RemoveAt(row.Index);
-            
+       
                     DataGridViewRow row = TransportGrid.SelectedRows[0];
 
                     if (row.Index == TransportGrid.Rows.Count - 1)
