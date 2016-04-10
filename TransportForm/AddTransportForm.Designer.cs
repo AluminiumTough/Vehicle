@@ -29,23 +29,21 @@
         private void InitializeComponent()
         {
             this.Transport = new System.Windows.Forms.GroupBox();
-            this.TypeHybrid = new System.Windows.Forms.GroupBox();
             this.TypeCar = new System.Windows.Forms.GroupBox();
+            this.VolumeOfTheTank = new System.Windows.Forms.Label();
             this.TypeHelicopter = new System.Windows.Forms.GroupBox();
             this.FuelHelicopter = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.VolumeOfTheTank = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.FuelConsumptionPer100km = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.TypeHybrid = new System.Windows.Forms.GroupBox();
             this.PowerOfBatteryHybrid = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.ElectricityConsumptionPer = new System.Windows.Forms.Label();
             this.Per100km = new System.Windows.Forms.Label();
             this.ElectricityHybrid = new System.Windows.Forms.TextBox();
             this.FuelHybrid = new System.Windows.Forms.TextBox();
-            this.Cancel = new System.Windows.Forms.Button();
-            this.OK = new System.Windows.Forms.Button();
             this.TransportType = new System.Windows.Forms.GroupBox();
             this.Helicopter = new System.Windows.Forms.RadioButton();
             this.Hybrid = new System.Windows.Forms.RadioButton();
@@ -56,10 +54,12 @@
             this.Distance = new System.Windows.Forms.Label();
             this.DateOfManufacture = new System.Windows.Forms.Label();
             this.ModelName = new System.Windows.Forms.Label();
+            this.Cancel = new System.Windows.Forms.Button();
+            this.OK = new System.Windows.Forms.Button();
             this.Transport.SuspendLayout();
-            this.TypeHybrid.SuspendLayout();
             this.TypeCar.SuspendLayout();
             this.TypeHelicopter.SuspendLayout();
+            this.TypeHybrid.SuspendLayout();
             this.TransportType.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -68,7 +68,6 @@
             this.Transport.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.Transport.Controls.Add(this.TypeCar);
             this.Transport.Controls.Add(this.TypeHybrid);
             this.Transport.Controls.Add(this.TransportType);
             this.Transport.Controls.Add(this.dist);
@@ -84,37 +83,31 @@
             this.Transport.TabStop = false;
             this.Transport.Text = "Transport";
             // 
-            // TypeHybrid
-            // 
-            this.TypeHybrid.Controls.Add(this.PowerOfBatteryHybrid);
-            this.TypeHybrid.Controls.Add(this.label1);
-            this.TypeHybrid.Controls.Add(this.ElectricityConsumptionPer);
-            this.TypeHybrid.Controls.Add(this.Per100km);
-            this.TypeHybrid.Controls.Add(this.ElectricityHybrid);
-            this.TypeHybrid.Controls.Add(this.FuelHybrid);
-            this.TypeHybrid.Location = new System.Drawing.Point(6, 159);
-            this.TypeHybrid.Name = "TypeHybrid";
-            this.TypeHybrid.Size = new System.Drawing.Size(294, 99);
-            this.TypeHybrid.TabIndex = 9;
-            this.TypeHybrid.TabStop = false;
-            this.TypeHybrid.Text = "TypeHybrid";
-            // 
             // TypeCar
             // 
             this.TypeCar.Controls.Add(this.VolumeOfTheTank);
-            this.TypeCar.Controls.Add(this.TypeHelicopter);
             this.TypeCar.Controls.Add(this.textBox2);
             this.TypeCar.Controls.Add(this.FuelConsumptionPer100km);
             this.TypeCar.Controls.Add(this.textBox1);
-            this.TypeCar.Location = new System.Drawing.Point(5, 159);
+            this.TypeCar.Location = new System.Drawing.Point(0, 0);
             this.TypeCar.Name = "TypeCar";
             this.TypeCar.Size = new System.Drawing.Size(294, 99);
             this.TypeCar.TabIndex = 8;
             this.TypeCar.TabStop = false;
             this.TypeCar.Text = "TypeCar";
             // 
+            // VolumeOfTheTank
+            // 
+            this.VolumeOfTheTank.AutoSize = true;
+            this.VolumeOfTheTank.Location = new System.Drawing.Point(11, 41);
+            this.VolumeOfTheTank.Name = "VolumeOfTheTank";
+            this.VolumeOfTheTank.Size = new System.Drawing.Size(97, 13);
+            this.VolumeOfTheTank.TabIndex = 3;
+            this.VolumeOfTheTank.Text = "VolumeOfTheTank";
+            // 
             // TypeHelicopter
             // 
+            this.TypeHelicopter.Controls.Add(this.TypeCar);
             this.TypeHelicopter.Controls.Add(this.FuelHelicopter);
             this.TypeHelicopter.Controls.Add(this.label3);
             this.TypeHelicopter.Location = new System.Drawing.Point(0, 0);
@@ -140,15 +133,6 @@
             this.label3.TabIndex = 0;
             this.label3.Text = "FuelConsumptionPer100km";
             // 
-            // VolumeOfTheTank
-            // 
-            this.VolumeOfTheTank.AutoSize = true;
-            this.VolumeOfTheTank.Location = new System.Drawing.Point(11, 41);
-            this.VolumeOfTheTank.Name = "VolumeOfTheTank";
-            this.VolumeOfTheTank.Size = new System.Drawing.Size(97, 13);
-            this.VolumeOfTheTank.TabIndex = 3;
-            this.VolumeOfTheTank.Text = "VolumeOfTheTank";
-            // 
             // textBox2
             // 
             this.textBox2.Location = new System.Drawing.Point(153, 41);
@@ -171,6 +155,22 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 20);
             this.textBox1.TabIndex = 0;
+            // 
+            // TypeHybrid
+            // 
+            this.TypeHybrid.Controls.Add(this.PowerOfBatteryHybrid);
+            this.TypeHybrid.Controls.Add(this.TypeHelicopter);
+            this.TypeHybrid.Controls.Add(this.label1);
+            this.TypeHybrid.Controls.Add(this.ElectricityConsumptionPer);
+            this.TypeHybrid.Controls.Add(this.Per100km);
+            this.TypeHybrid.Controls.Add(this.ElectricityHybrid);
+            this.TypeHybrid.Controls.Add(this.FuelHybrid);
+            this.TypeHybrid.Location = new System.Drawing.Point(6, 159);
+            this.TypeHybrid.Name = "TypeHybrid";
+            this.TypeHybrid.Size = new System.Drawing.Size(294, 99);
+            this.TypeHybrid.TabIndex = 9;
+            this.TypeHybrid.TabStop = false;
+            this.TypeHybrid.Text = "TypeHybrid";
             // 
             // PowerOfBatteryHybrid
             // 
@@ -219,28 +219,6 @@
             this.FuelHybrid.Name = "FuelHybrid";
             this.FuelHybrid.Size = new System.Drawing.Size(100, 20);
             this.FuelHybrid.TabIndex = 0;
-            // 
-            // Cancel
-            // 
-            this.Cancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.Cancel.Location = new System.Drawing.Point(124, 354);
-            this.Cancel.Name = "Cancel";
-            this.Cancel.Size = new System.Drawing.Size(75, 23);
-            this.Cancel.TabIndex = 7;
-            this.Cancel.Text = "Cancel";
-            this.Cancel.UseVisualStyleBackColor = true;
-            this.Cancel.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // OK
-            // 
-            this.OK.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.OK.Location = new System.Drawing.Point(17, 354);
-            this.OK.Name = "OK";
-            this.OK.Size = new System.Drawing.Size(75, 23);
-            this.OK.TabIndex = 3;
-            this.OK.Text = "OK";
-            this.OK.UseVisualStyleBackColor = true;
-            this.OK.Click += new System.EventHandler(this.OK_Click);
             // 
             // TransportType
             // 
@@ -337,6 +315,28 @@
             this.ModelName.TabIndex = 0;
             this.ModelName.Text = "ModelName";
             // 
+            // Cancel
+            // 
+            this.Cancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.Cancel.Location = new System.Drawing.Point(124, 354);
+            this.Cancel.Name = "Cancel";
+            this.Cancel.Size = new System.Drawing.Size(75, 23);
+            this.Cancel.TabIndex = 7;
+            this.Cancel.Text = "Cancel";
+            this.Cancel.UseVisualStyleBackColor = true;
+            this.Cancel.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // OK
+            // 
+            this.OK.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.OK.Location = new System.Drawing.Point(17, 354);
+            this.OK.Name = "OK";
+            this.OK.Size = new System.Drawing.Size(75, 23);
+            this.OK.TabIndex = 6;
+            this.OK.Text = "OK";
+            this.OK.UseVisualStyleBackColor = true;
+            this.OK.Click += new System.EventHandler(this.OK_Click);
+            // 
             // AddTransportForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -349,12 +349,12 @@
             this.Text = "AddTransportForm";
             this.Transport.ResumeLayout(false);
             this.Transport.PerformLayout();
-            this.TypeHybrid.ResumeLayout(false);
-            this.TypeHybrid.PerformLayout();
             this.TypeCar.ResumeLayout(false);
             this.TypeCar.PerformLayout();
             this.TypeHelicopter.ResumeLayout(false);
             this.TypeHelicopter.PerformLayout();
+            this.TypeHybrid.ResumeLayout(false);
+            this.TypeHybrid.PerformLayout();
             this.TransportType.ResumeLayout(false);
             this.TransportType.PerformLayout();
             this.ResumeLayout(false);

@@ -33,3 +33,16 @@ C:\Users\Nurman\Desktop\СПО\lab.2\Model\TransportForm\obj\Debug\TransportForm
 C:\Users\Nurman\Desktop\СПО\lab.2\Model\TransportForm\obj\Debug\TransportForm.csproj.GenerateResource.Cache
 C:\Users\Nurman\Desktop\СПО\lab.2\Model\TransportForm\bin\Debug\Newtonsoft.Json.dll
 C:\Users\Nurman\Desktop\СПО\lab.2\Model\TransportForm\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Nurman\Desktop\СПО\Vehicle\TransportForm\obj\Debug\TransportForm.exe
+C:\Users\Nurman\Desktop\СПО\Vehicle\TransportForm\obj\Debug\TransportForm.pdb
+C:\Users\Nurman\Desktop\СПО\Vehicle\TransportForm\bin\Debug\TransportForm.exe
+C:\Users\Nurman\Desktop\СПО\Vehicle\TransportForm\bin\Debug\TransportForm.pdb
+C:\Users\Nurman\Desktop\СПО\Vehicle\TransportForm\bin\Debug\Model.dll
+C:\Users\Nurman\Desktop\СПО\Vehicle\TransportForm\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Nurman\Desktop\СПО\Vehicle\TransportForm\bin\Debug\Model.pdb
+C:\Users\Nurman\Desktop\СПО\Vehicle\TransportForm\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Nurman\Desktop\СПО\Vehicle\TransportForm\obj\Debug\TransportForm.csprojResolveAssemblyReference.cache
+C:\Users\Nurman\Desktop\СПО\Vehicle\TransportForm\obj\Debug\TransportForm.AddTransportForm.resources
+C:\Users\Nurman\Desktop\СПО\Vehicle\TransportForm\obj\Debug\TransportForm.MainForm.resources
+C:\Users\Nurman\Desktop\СПО\Vehicle\TransportForm\obj\Debug\TransportForm.Properties.Resources.resources
+C:\Users\Nurman\Desktop\СПО\Vehicle\TransportForm\obj\Debug\TransportForm.csproj.GenerateResource.Cache

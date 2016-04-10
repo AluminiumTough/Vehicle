@@ -19,7 +19,7 @@ namespace Model
             } 
            set
             {
-                if (value < 100)
+                if (value > 100)
                     throw new InvalidOperationException("!");
                 _fuelConsumptionPer100km = value;
             }
@@ -47,7 +47,7 @@ namespace Model
             get { return _dateOfManufacture; }
             set
             {
-                if (value < 0)
+                if (value < 1980)
                     throw new InvalidOperationException("!");
                 _dateOfManufacture = value;
             }

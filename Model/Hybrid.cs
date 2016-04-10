@@ -15,7 +15,7 @@ namespace Model
         {
             set
             {
-                if (value > 100)
+                if (value > 40)
                     throw new InvalidOperationException("!");
                 _fuelConsumptionPer100km = value;
             }
