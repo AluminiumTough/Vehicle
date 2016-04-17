@@ -41,7 +41,7 @@ namespace Model
 
             set
             {
-                if (value < 0 || value > 85)
+                if (value < 0 || value > 80)
                     throw new InvalidOperationException("!");
                 _volumeOfTheTank = value;
             }
@@ -87,7 +87,7 @@ namespace Model
             get { return _dateOfManufacture; }
             set
             {
-                if (value < 0 || value > 2017)
+                if (value < 0 || value > 2016)
                     throw new InvalidOperationException("!");
                 _dateOfManufacture = value;
             }

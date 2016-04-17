@@ -47,7 +47,7 @@ namespace Model
             get { return _dateOfManufacture; }
             set
             {
-                if (value < 1980)
+                if (value < 1980 || value > 2016)
                     throw new InvalidOperationException("!");
                 _dateOfManufacture = value;
             }
