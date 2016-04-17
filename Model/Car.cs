@@ -58,7 +58,7 @@ namespace Model
             get { return _theCurrentAmountOfFuel; }
             set
             {
-                if (value < 0 || value > 80)
+                if (value < 0 || value > 70)
                     throw new InvalidOperationException("!");
                 _theCurrentAmountOfFuel = value;
             }
@@ -87,7 +87,7 @@ namespace Model
             get { return _dateOfManufacture; }
             set
             {
-                if (value < 0 || value > 2017)
+                if (value < 0 || value > 2016)
                     throw new InvalidOperationException("!");
                 _dateOfManufacture = value;
             }
