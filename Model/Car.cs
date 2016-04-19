@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Management.Instrumentation;
 using System.Text;
 
 namespace Model
@@ -19,8 +20,8 @@ namespace Model
            get { return _fuelConsumptionPer100km; } 
            set
             {
-                if (value > 100)
-                    throw new InvalidOperationException("!");
+                if (value <0 || value > 50)
+                    throw new InvalidOperationException("Неверно задан расход топлива у автомобиля");
                 _fuelConsumptionPer100km = value;
             } 
         }
@@ -41,8 +42,8 @@ namespace Model
 
             set
             {
-                if (value < 0 || value > 85)
-                    throw new InvalidOperationException("!");
+                if (value < 0 || value > 70)
+                    throw new InvalidOperationException("Неверно задан объем бака у авто");
                 _volumeOfTheTank = value;
             }
         }
@@ -59,7 +60,7 @@ namespace Model
             set
             {
                 if (value < 0 || value > 70)
-                    throw new InvalidOperationException("!");
+                    throw new InvalidOperationException("Неверно задана текущее количество топлива у авто");
                 _theCurrentAmountOfFuel = value;
             }
         }
@@ -70,8 +71,15 @@ namespace Model
         /// </summary>
         public string ModelName
         {
+
             get { return _modelName; }
-            set { _modelName = value; }
+
+            set
+            {
+                if (!(value is string))
+                    throw new ArgumentException("Неверное имя у авто");
+                _modelName = value;
+            }
         }
         /// <summary>
         /// Год выпуска
@@ -87,8 +95,8 @@ namespace Model
             get { return _dateOfManufacture; }
             set
             {
-                if (value < 0 || value > 2016)
-                    throw new InvalidOperationException("!");
+                if (value < 1950 || value > 2016)
+                    throw new InvalidOperationException("Неверно задан год выпуска у авто");
                 _dateOfManufacture = value;
             }
         }
@@ -105,7 +113,7 @@ namespace Model
             set
             {
                 if (value < 0)
-                    throw new InvalidOperationException("!");
+                    throw new InvalidOperationException("Неверно задан пробег у авто");
                 _distance = value;
             }
         }

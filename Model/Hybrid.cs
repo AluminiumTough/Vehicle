@@ -15,8 +15,8 @@ namespace Model
         {
             set
             {
-                if (value > 40)
-                    throw new InvalidOperationException("!");
+                if (value <0 || value > 20)
+                    throw new InvalidOperationException("Неверно задан расход топлива у гибрида");
                 _fuelConsumptionPer100km = value;
             }
             get { return _fuelConsumptionPer100km; }
@@ -30,8 +30,8 @@ namespace Model
         {
             set
             {
-                if (value < 25 || value > 65 )
-                    throw new InvalidOperationException("!");
+                if (value < 0 || value > 65 )
+                    throw new InvalidOperationException("Неверно задан расход электричества у гибрида");
                 _electricityConsumptionPer100km = value;
             }
             get { return _electricityConsumptionPer100km; }
@@ -46,7 +46,7 @@ namespace Model
             set
             {
                 if (value < 50 || value > 85)
-                    throw new InvalidOperationException("!");
+                    throw new InvalidOperationException("Неверно задана мощность аккумулятора");
                 _powerOfBattery = value;
             }
             get { return _powerOfBattery; }
@@ -60,8 +60,8 @@ namespace Model
         {
             set
             {
-                if (value < 0 || value > 45)
-                    throw new InvalidOperationException("!");
+                if (value < 0 || value > 35)
+                    throw new InvalidOperationException("Неверно задан объем бака");
                 _volumeOfTheTank = value;
             }
             get { return _volumeOfTheTank; }
@@ -77,8 +77,8 @@ namespace Model
         {
             set
             {
-                if (value < 0 || value > 45)
-                    throw new InvalidOperationException("!");
+                if (value < 0 || value > 35)
+                    throw new InvalidOperationException("Неверно задано текущее количество топлива");
                 _theCurrentAmountOfFuel = value;
             }
             get { return _theCurrentAmountOfFuel; }
@@ -95,8 +95,14 @@ namespace Model
         /// </summary>
         public string ModelName
         {
-            set { _modelName = value; }
             get { return _modelName; }
+
+            set
+            {   if (!(value is string))
+                   throw new ArgumentException("Неверно задано имя у гибрида");
+                _modelName = value;
+            }
+            
         }
         /// <summary>
         /// Год выпуска
@@ -108,8 +114,8 @@ namespace Model
         {
             set
             {
-                if (value < 0)
-                    throw new InvalidOperationException("!");
+                if (value < 2004 || value > 2016)
+                    throw new InvalidOperationException("Неверно задан год выпуска гибрида");
                 _dateOfManufacture = value;
             }
             get { return _dateOfManufacture; }
@@ -124,7 +130,7 @@ namespace Model
             set
             {
                 if (value < 0)
-                    throw new InvalidOperationException("!");
+                    throw new InvalidOperationException("Неверно задан пробег у гибрида");
                 _distance = value;
             }
 

@@ -58,18 +58,18 @@ namespace TransportForm
         /// <param name="e"></param>
         private void RemoveTransport_Click(object sender, EventArgs e)
         {
-            if (TransportGrid.SelectedRows.Count == 1)
+            if (TransportGrid.SelectedRows.Count != null )
             {
-       
-                    DataGridViewRow row = TransportGrid.SelectedRows[0];
+                TransportGrid.Rows.RemoveAt(TransportGrid.CurrentRow.Index);
+                //DataGridViewRow row = TransportGrid.SelectedRows[0];
 
-                    if (row.Index == TransportGrid.Rows.Count - 1)
-                        return;
+                //if (row.Index == TransportGrid.Rows.Count - 1)
+                //    return;
 
-                    Vehicle.RemoveAt(row.Index);
+                //Vehicle.RemoveAt(row.Index);
 
-                    TransportGrid.Rows.RemoveAt(row.Index);
-                
+                //TransportGrid.Rows.RemoveAt(row.Index);
+
             }
         }
         /// <summary>

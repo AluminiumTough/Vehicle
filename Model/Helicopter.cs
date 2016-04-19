@@ -19,8 +19,8 @@ namespace Model
             } 
            set
             {
-                if (value > 100)
-                    throw new InvalidOperationException("!");
+                if (value < 100 || value > 350)
+                    throw new InvalidOperationException("Неверно задан расход керосина у вертолета");
                 _fuelConsumptionPer100km = value;
             }
         }
@@ -34,7 +34,13 @@ namespace Model
         public string ModelName
         {
             get { return _modelName; }
-            set { _modelName = value; }
+
+            set
+            {
+                if (!(value is string))
+                    throw new ArgumentException("Неверное имя у вертолета");
+                _modelName = value;
+            }
         }
 
         public int _dateOfManufacture;
@@ -47,8 +53,8 @@ namespace Model
             get { return _dateOfManufacture; }
             set
             {
-                if (value < 1980)
-                    throw new InvalidOperationException("!");
+                if (value < 1955 || value > 2016)
+                    throw new InvalidOperationException("Неверно задан год выпуска у вертолета");
                 _dateOfManufacture = value;
             }
         }
@@ -65,7 +71,7 @@ namespace Model
             set
             {
                 if (value < 0)
-                    throw new InvalidOperationException("!");
+                    throw new InvalidOperationException("Неверно задан пробег у вертолета");
                 _distance = value;
             }
         }
